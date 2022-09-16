@@ -2,24 +2,27 @@ import Head from 'next/head';
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className="w-full">
       <Head>
-        <title>Next Typescript Tailwind Starter</title>
+        <title>Pagka Holdings</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
-        <meta name="description" content="Description" />
-        <meta name="keywords" content="Keywords" />
+        <meta name="description" content="Pagka Holdings" />
+        <meta
+          name="keywords"
+          content="Pagka Holdings, Agency, Zimbabwe Digital Agency"
+        />
 
         {/* Android */}
         <meta name="theme-color" content="red" />
         <meta name="mobile-web-app-capable" content="yes" />
 
         {/* iOS */}
-        <meta name="apple-mobile-web-app-title" content="Application Title" />
+        <meta name="apple-mobile-web-app-title" content="Pagka Holdings" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
@@ -30,8 +33,7 @@ export default function Nav() {
         <meta name="msapplication-config" content="browserconfig.xml" />
 
         {/* Pinned Sites  */}
-        <meta name="application-name" content="Application Name" />
-        <meta name="msapplication-tooltip" content="Tooltip Text" />
+        <meta name="application-name" content="Pagka Holdings" />
         <meta name="msapplication-starturl" content="/" />
 
         {/* Tap highlighting  */}
@@ -87,6 +89,9 @@ export default function Nav() {
         {/*  Manifest.json  */}
         <link href="manifest.json" rel="manifest" />
       </Head>
+      <div className="container flex justify-between max-w-5xl py-4 pt-8 mx-auto bg-transparent">
+        <p className="text-xl font-bold text-slate-900">Pagka Holdings</p>
+      </div>
     </nav>
   );
 }

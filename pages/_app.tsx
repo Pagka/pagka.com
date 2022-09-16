@@ -3,7 +3,11 @@ import { AppProps /* , AppContext */ } from 'next/app';
 import 'styles/globals.css';
 
 function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <main className="text-xl antialiased tracking-tighter text-slate-600">
+      <Component {...pageProps} />
+    </main>
+  );
 }
 
 // Only uncomment this method if you have blocking data requirements for
